@@ -1,0 +1,443 @@
+
+.side-menu {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    z-index: 999; /* Asegura que el menú esté encima de otros elementos */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px; /* Menos espacio arriba */
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Las opciones de menú dentro del side menu */
+.side-menu a {
+    padding: 12px 20px; /* Reducido el padding */
+    text-decoration: none;
+    font-size: 18px; /* Tamaño de letra más pequeño */
+    color: #c0c0c0;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Times New Roman', serif; /* Fuente Times New Roman */
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Reducido el espacio entre letras */
+    border-bottom: 1px solid #444; /* Reducido el grosor del borde */
+    text-shadow: 0 0 10px rgba(255, 165, 0, 0.7); /* Resplandor naranja */
+}
+
+/* Efecto al pasar el ratón (hover) sobre los elementos del menú */
+.side-menu a:hover {
+    background-color: #ff7e5f; /* Naranja brillante, estilo Dragon Ball */
+    color: #fff;
+    box-shadow: 0 0 15px 5px rgba(255, 165, 0, 0.8); /* Resplandor naranja */
+    transform: scale(1.05); /* Agranda un poco */
+}
+
+/* El botón para cerrar el menú (X) */
+.side-menu .closebtn {
+    position: absolute;
+    top: 10px; /* Colocamos la X más arriba para mejorar visibilidad */
+    right: 25px; /* La X está en la esquina superior derecha */
+    font-size: 30px; /* Tamaño de la X reducido */
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer; /* Hacemos que la X sea clickeable */
+    text-shadow: 0 0 10px #ff7e5f, 0 0 20px #ff7e5f; /* Resplandor naranja similar a Dragon Ball */
+}
+
+/* Efecto al pasar el ratón (hover) sobre el botón de cerrar */
+.side-menu .closebtn:hover {
+    color: #ff7e5f; /* Color de la X en naranja al pasar el ratón */
+    box-shadow: 0 0 20px #ff7e5f; /* Resplandor alrededor de la X */
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar el ratón */
+}
+
+/* Icono para abrir el menú lateral */
+.openbtn {
+    font-size: 22px; /* Ajustamos el tamaño de la fuente */
+    padding: 10px 15px; /* Ajustamos el padding */
+    background-color: #ff7e5f; /* Color principal, estilo Dragon Ball */
+    color: white;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* Cambiado de left a right */
+    z-index: 1000;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', serif; /* Fuente Times New Roman */
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.5); /* Resplandor suave */
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el ratón (hover) sobre el botón de abrir el menú */
+.openbtn:hover {
+    background-color: #ff4500; /* Naranja intenso */
+    box-shadow: 0 4px 20px rgba(255, 165, 0, 0.8); /* Resplandor más fuerte */
+    transform: scale(1.05);
+}
+
+
+.seccion {
+    display: none; 
+    padding: 60px 20px;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Solo se muestra la sección activa */
+.seccion.mostrar {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animaciones para cada sección */
+#bienvenida {
+    animation: fadeIn 1s ease-out;
+}
+
+#acerca-de {
+    animation: bounceInLeft 1s ease-out; 
+}
+
+#acerca-de {
+    padding: 30px; /* Espaciado alrededor del contenido */
+    background-color: #f9f9f9; /* Fondo suave para que resalte el texto */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para darle un toque más profesional */
+    line-height: 1.8; /* Mejorar el espacio entre las líneas de texto */
+    font-size: 1.1rem; /* Aumentar el tamaño de la fuente para mayor legibilidad */
+    color: #333; /* Color de texto oscuro para un mejor contraste */
+    margin: 20px 0; /* Margen arriba y abajo de la sección */
+}
+
+#acerca-de h2 {
+    font-size: 2rem; /* Tamaño del encabezado */
+    text-align: center; /* Centrar el título */
+    color: #ff7e5f; /* Color para que resalte el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+#acerca-de p {
+    margin-bottom: 20px; /* Espacio entre párrafos */
+    font-family: 'Arial', sans-serif; /* Tipografía más legible */
+    line-height: 1.8; /* Mejor espacio entre líneas */
+}
+
+#acerca-de ul {
+    list-style-type: none; /
+    padding-left: 0; 
+}
+
+#acerca-de ul li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    font-size: 1.1rem; 
+}
+
+#acerca-de img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-top: 20px; /
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+}
+
+#pasatiempos {
+    animation: bounceInRight 1s ease-out; 
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Sección de Contacto */
+.contacto {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* Asegúrate de que el contenedor no tenga display: none; o visibility: hidden */
+}
+
+.contacto h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff7e5f;
+}
+
+.contacto p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineamos los elementos del formulario a la izquierda */
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 12px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff4500;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contacto {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9em;
+    }
+
+    form button {
+        font-size: 1em;
+    }
+}
+/* Mis Datos de Contacto */
+.mis-datos {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.mis-datos h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ff7e5f;
+}
+
+.mis-datos p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.mis-datos a {
+    color: #ff7e5f;
+    text-decoration: none;
+}
+
+.mis-datos a:hover {
+    color: #ff4500;
+}
+
+/* Estilos de responsive */
+@media (max-width: 768px) {
+    .seccion {
+        padding: 20px;
+    }
+
+    form {
+        padding: 15px;
+        max-width: 100%;
+    }
+}
+
+
+}
+
+/* Animaciones clave */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.banner {
+    position: relative;
+    background-color: #000;  /* Fondo oscuro para destacar la imagen */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 50px;
+    animation: fadeIn 2s ease-out, explode 2s ease-out forwards;
+}
+
+/* Imagen de Goku con un efecto de animación */
+.goku-img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Ajustar tamaño */
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px rgba(192, 192, 192, 0.7); /* Efecto de resplandor plateado */
+    animation: pulse 2s infinite; /* Efecto de resplandor */
+}
+
+/* Título de bienvenida con estilo de Dragon Ball */
+.banner h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 0 0 5px #c0c0c0, 0 0 10px #c0c0c0, 0 0 15px #c0c0c0; /* Resplandor plateado */
+    animation: textAppear 2s ease-out forwards;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Animación de desvanecimiento de la sección */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto de explosión al abrir el banner */
+@keyframes explode {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Efecto de resplandor de la imagen de Goku */
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 10px 5px rgba(192, 192, 192, 0.7); /* Resplandor plateado */
+    }
+    50% {
+        box-shadow: 0px 0px 20px 10px rgba(192, 192, 192, 1); /* Resplandor plateado */
+    }
+    100% {
+        box-shadow: 0px 0px 10px 5px rgba(192, 192, 192, 0.7); /* Resplandor plateado */
+    }
+}
+
+/* Animación para el título */
+@keyframes textAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
