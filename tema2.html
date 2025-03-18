@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo problema fundamental</title>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<header>
+		<div class="content">
+			<input type="checkbox" id="menu">
+			<label for="menu">
+				<img src="img/menu.png" class="menu-icono" alt="Menú">
+			</label>
+			<nav class="navbar">
+        <ul>
+            <li>
+                <a href="index.html">BIENVENIDA</a>
+            </li>
+            <li>
+                <a href="tema1.html">LUGARES GEOMÉTRICOS Y PRIMER PROBLEMA FUNDAMENTAL</a>
+            </li>
+             <li>
+                <a href="tema2.html">SEGUNDO PROBLEMA FUNDAMENTAL</a>
+            </li>
+            <li>
+                <a href="tema3.html">ECUACIÓN GENERAL DE SEGUNDO GRADO</a>
+            </li>
+            <li>
+                <a href="tema4.html">SECCIONES CÓNICAS</a>
+            </li>
+			<li>
+                <a href="contacto.html">CONTACTO</a>
+            </li>
+			</nav>
+		</div>
+	</header>	
+    <h1>SEGUNDO PROBLEMA FUNDAMENTAL</h1>
+<div class="indice">
+ <a id="indice" name="indice"><h2>INDICE</h2></a>
+ <ul>
+    <a href="#subtema1"><li>DETERMINACIÓN DE LA ECUACIÓN DE UN LUGAR GEOMÉTRICO</li></a>
+ </ul>
+ </div>
+ <div class="texto">
+    <a id="subtema1" name="subtema1"><font face="BernhardTango BT" color="#6441A4"></font></a>
+    <h2>DETERMINACIÓN DE LA ECUACIÓN DE UN LUGAR GEOMÉTRICO</h2>
+    El segundo problema fundamental de la geometría analítica consiste en que, dada una figura geométrica, o la condición que deben cumplir los puntos de la misma, se tiene que determinar su ecuación.
+
+    <br><br>
+    Es posible determinar una ecuación desde un lugar geométrico, a partir de un conjunto de puntos que tienen cierta propiedad geométrica o de una gráfica. 
+    <br><br>
+    <h3>EJEMPLO 1:</h3>
+    <br>
+    Determina el lugar geométrico de un punto que al moverse equidista siempre de los puntos \(A(2,6) Y B(8,2)\)
+    <br><br>
+    <h3>SOLUCIÓN:</h3>
+    <br>
+    Se toma el punto P \( (x,y) \) cualquiera del lugar geométrico. Este debe cumplir la condición geométrica de ser equidistante al punto A y B. Es decir, cumple con la condición.
+    <br><br>
+    \( PA = PB\)
+    <br><br>
+    Por lo tanto, se emplea la fórmula de distancia entre dos puntos, es decir: 
+    <br><br>
+    d\( (P_1, P_2) \)= \( \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\)   
+    <br><br><br>
+    Se aplica esta fórmula y se tiene:
+    <br><br>
+    d\( P, A \)=\( \sqrt{(x - 2)^2 + (y - 6)^2}\) = \(\sqrt{(x - 8)^2 + (y - 2)^2}= d(P,B)\) 
+    <br><br><br>
+    Se elevan al cuadrado ambos miembros de la igualdad con el objeto de eliminar los radicales y queda la ecuación:
+    <br><br>
+    \((x - 2)^2 + (y - 6)^2 = (x - 8)^2 + (y - 2)^2\)
+    <br><br><br>
+    Se desarrollan los binomios y se obtiene:
+    <br><br>
+    \(x^2 - 4x + 4 + y^2 - 12y + 36 = x^2 - 16x + 64 + y^2 -4y + 4\)
+    <br>
+    \(x^2-4x+4-y^2-12y+36=x^2-16x+64+y^2-4y+4\)
+    <br><br><br>
+    Se resaltan los términos semejantes:
+    <br><br>
+    \(12x - 8y - 28 = 0\)
+    <br><br><br>
+    Esta ecuación es equivalente a \(3x - 2y - 7 = 0\), que corresponde a la mediatriz del segmento de recta \(AB.\)
+    <br><br>
+
+    <img src="img/ejemplo1.jpg" width="400" height="300" class="img">
+    <br><br><br><br>
+
+
+
+
+    <h3>EJEMPLO 2:</h3>
+    <br>
+    Determina el lugar geométrico de un punto que se mueve de tal manera que su distancia a la recta \( x = -2 \) es siempre igual a su distancia del punto \((2,0)\).
+    <br><br>
+    <h3>SOLUCIÓN:</h3>
+    <br>
+    Según la condición dada y de acuerdo con la figura que representa la situación, debe cumplirse que:
+    <br><br>
+    \(d_1=d_2\)
+    <br>
+    \(x+2 = \sqrt{(x-2)^2+(y-0)^2}\)
+    <br><br><br>
+    Se elevan al cuadrado ambos lados de la ecuación para eliminar el radical y se obtiene:
+    <br><br>
+    \((x+2)^2=(x-2)^2+(y-0)^2 \)
+    <br>
+    \(x^2-4x+4=x^2-4x+y^2\)
+    <br><br><br>
+    Se simplifica y se obtiene:
+    <br><br>
+    \(y^2= 8x\)
+    <br><br><br>
+    El lugar geométrico corresponde a una parábola horizontal con vértice en el origen.
+    <img src="img/ejemplo2.jpg" width="300" height="410" class="img2">
+     <br><br><br>
+    <a href="#indice">REGRESAR AL ÍNDICE</li></a>
+    <br><br><br><br><br>
+
+
+ </div>
+    <footer class="footer">
+        <p class="copyright">&copy; 2025 Todos los derechos reservados. Desarrollado por el salón 2605.</p>
+    </footer>
+</body>
+</html>

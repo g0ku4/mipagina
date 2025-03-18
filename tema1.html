@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugares Geométricos y primer problema fundamental</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="Menú">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">BIENVENIDA</a></li>
+                    <li><a href="tema1.html">LUGARES GEOMÉTRICOS Y PRIMER PROBLEMA FUNDAMENTAL</a></li>
+                    <li><a href="tema2.html">SEGUNDO PROBLEMA FUNDAMENTAL</a></li>
+                    <li><a href="tema3.html">ECUACIÓN GENERAL DE SEGUNDO GRADO</a></li>
+                    <li><a href="tema4.html">SECCIONES CÓNICAS</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1>Lugares geométricos y primer problema fundamental</h1>
+    <div class="indice">
+        <a id="indice" name="indice"><h2>ÍNDICE</h2></a>
+    <ul>
+    <a href="#sub1"><li>INTERSECCIONES</li></a>
+    <a href="#sub2"><li>SIMETRÍA EN EL PLANO CARTESIANO</li></a>
+    <a href="#sub3"><li>EXTENSIÓN</li></a>
+    <a href="#sub4"><li>TRAZO DE CURVAS</li></a>
+    </ul>
+    </div>
+ <div class="texto"> 
+    <a id="sub1" name="sub1"><font face="BernhardTango BT" color="#6441A4"></font></a>
+    <h2>INTERSECCIONES</h2>
+    <h3>¿Qué son las intersecciones?</h3>
+    <p>En geometría analítica, la intersección se refiere al punto o conjunto de puntos donde dos o más figuras geométricas se cruzan. Esto puede ocurrir entre rectas, curvas o superficies en un plano o en el espacio tridimensional. El análisis de intersecciones es fundamental en la resolución de sistemas de ecuaciones y en la comprensión de la relación entre distintas figuras geométricas.</p>
+
+    <h3>Intersección de dos rectas</h3>
+    <p>Para determinar la intersección de dos rectas en el plano cartesiano, se resuelven sus ecuaciones simultáneamente. Dados los sistemas de ecuaciones:</p>
+    
+        y = m1x + b1  <br>
+        y = m2x + b2<br>
+<br>
+    <p>El punto de intersección se encuentra igualando ambas ecuaciones y resolviendo para <em>x</em> y <em>y</em>. Existen tres posibles casos:</p>
+    <ul>
+        <li>Si las rectas tienen diferente pendiente (<strong>m1 ≠ m2</strong>), se intersectan en un único punto.</li>
+        <li>Si las rectas tienen la misma pendiente pero diferente ordenada al origen (<strong>b1 ≠ b2</strong>), son paralelas y no tienen intersección.</li>
+        <li>Si las rectas tienen la misma ecuación (<strong>m1 = m2</strong> y <strong>b1 = b2</strong>), son coincidentes e infinitos puntos cumplen la ecuación.</li>
+    </ul>
+    <h3>Ejemplo:</h3>
+    <p>Encuentra la intersección de las rectas <strong>y = 2x + 1</strong> y <strong>y = -x + 4</strong>.</p>
+    <p>Igualamos las ecuaciones:</p>
+   
+        2x + 1 = -x + 4
+    <br>
+    <p>Resolviendo para <em>x</em>:</p>
+   
+        2x + x = 4 - 1<br>
+        3x = 3<br>
+        x = 1<br>
+<br>
+    <p>Sustituyendo en una de las ecuaciones:</p>
+    
+        y = 2(1) + 1 = 3
+<br>
+    <p>Por lo tanto, el punto de intersección es <strong>(1,3)</strong>.</p>
+
+    <h3>Intersección de una recta con una cónica</h3>
+    <p>Para hallar la intersección entre una recta y una cónica (circunferencia, parábola, elipse o hipérbola), se sustituye la ecuación de la recta en la ecuación de la cónica y se resuelve la ecuación cuadrática resultante.</p>
+
+    <h3>Ejemplo:</h3>
+    <p>Hallar la intersección entre la recta <strong>y = 2x - 3</strong> y la circunferencia <strong>x² + y² = 25</strong>.</p>
+    <p><strong>Solución:</strong> Se sustituye <em>y</em> en la ecuación de la circunferencia:</p>
+   
+        x² + (2x - 3)² = 25
+   <br>
+    <p>Desarrollando:</p>
+    
+        x² + 4x² - 12x + 9 = 25<br>
+        5x² - 12x - 16 = 0<br>
+    <br>
+    <p>Resolviendo la ecuación cuadrática con la fórmula general:</p>
+
+        x = (-(-12) ± √((-12)² - 4(5)(-16))) / (2(5))<br>
+        x = (12 ± √(144 + 320)) / 10<br>
+        x = (12 ± √464) / 10<br>
+        x = (12 ± 21.54) / 10<br>
+        <br>
+    <p>Obteniendo dos valores de <em>x</em> y sus respectivos valores de <em>y</em>, encontramos dos puntos de intersección.</p>
+
+    <h3>Conclusión</h3>
+    <p>El análisis de intersecciones es clave en la geometría analítica y tiene aplicaciones en física, ingeniería y computación. Identificar los puntos de intersección ayuda en la resolución de problemas gráficos y en la modelización de fenómenos naturales.</p>
+    <a href="#indice">REGRESAR AL ÍNDICE</li></a>
+
+    <div class="texto">
+         <a id="sub2" name="sub2"><font face="BernhardTango BT" color="#6441A4"></font></a>
+        <h2>Simetría en el Plano Cartesiano</h2>
+        <p>La simetría es una propiedad fundamental en matemáticas que nos ayuda a entender mejor el comportamiento de las gráficas de funciones y ecuaciones. En el plano cartesiano, existen tres tipos principales de simetría: simetría respecto al eje \( x \), simetría respecto al eje \( y \) y simetría respecto al origen. A continuación, te explicamos cada una de ellas con ejemplos y condiciones algebraicas.</p>
+        <br><br>
+        <h2>1. Simetría respecto al eje \( x \)</h2>
+        <p>Una gráfica es simétrica respecto al eje \( x \) si, al reflejarla sobre este eje, la gráfica no cambia. Esto significa que si un punto \( (x, y) \) pertenece a la gráfica, entonces el punto \( (x, -y) \) también debe pertenecer a ella.</p>
+        <p class="condition">Condición algebraica:</p>
+        <p>Para una función \( f(x) \), la simetría respecto al eje \( x \) se cumple si:</p>
+        <p>\[ f(x) = -f(x) \]</p>
+        <p>Sin embargo, esta condición es muy restrictiva, ya que la única función que la cumple es \( f(x) = 0 \). Por lo tanto, la simetría respecto al eje \( x \) es más común en relaciones que no son funciones, como en ecuaciones donde \( y \) está elevada a una potencia par.</p>
+
+        <button class="example-button" onclick="toggleExample('exampleContent5')">EJEMPLO</button>
+<div id="exampleContent5" class="example-content">
+    <p><strong>Ejemplo:</strong></p>
+    <p>Considera la ecuación \( y^2 = x^3 - 4x \).</p>
+    <div id="exerciseContent5" class="exercise-content">
+        <ol>
+            <li>
+                <strong>Sustituir \( y \) por \( -y \):</strong><br>
+                \[ (-y)^2 = x^3 - 4x \]
+            </li>
+            <li>
+                <strong>Simplificar la expresión:</strong><br>
+                \[ y^2 = x^3 - 4x \]
+            </li>
+            <li>
+                <strong>Comparar con la ecuación original:</strong><br>
+                La ecuación no cambia, por lo que la curva es simétrica respecto al eje \( x \).
+            </li>
+        </ol>
+        <p><strong>Conclusión:</strong></p>
+        <p>La curva es simétrica respecto al eje \( x \).</p>
+        <iframe src="https://www.geogebra.org/graphing/enzfvrun?embed" width="100%" height="400px" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+    </div>
+            </div>
+        <br><br>
+
+        <h2>2. Simetría respecto al eje \( y \)</h2>
+        <p>Una gráfica es simétrica respecto al eje \( y \) si, al reflejarla sobre este eje, la gráfica no cambia. Esto significa que si un punto \( (x, y) \) pertenece a la gráfica, entonces el punto \( (-x, y) \) también debe pertenecer a ella.</p>
+        <p class="condition">Condición algebraica:</p>
+        <p>Para una función \( f(x) \), la simetría respecto al eje \( y \) se cumple si:</p>
+        <p>\[ f(-x) = f(x) \]</p>
+        <p>Las funciones que cumplen esta condición se llaman funciones pares.</p>
+        
+        <button class="example-button" onclick="toggleExample('exampleContent2')">EJEMPLO</button>
+        <div id="exampleContent2" class="example-content">
+            <p><strong>Función:</strong> \( f(x) = x^4 - 3x^2 + 2 \)</p>
+            <div id="exerciseContent2" class="exercise-content">
+                <p><strong>Ejemplo:</strong></p>
+                <p>Considera la función \( f(x) = x^4 - 3x^2 + 2 \).</p>
+                <ol>
+                    <li>
+                        <strong>Sustituir \( x \) por \( -x \):</strong><br>
+                        \[ f(-x) = (-x)^4 - 3(-x)^2 + 2 = x^4 - 3x^2 + 2 \]
+                    </li>
+                    <li>
+                        <strong>Comparar con \( f(x) \):</strong><br>
+                        \[ f(-x) = f(x) \]
+                    </li>
+                </ol>
+                <p><strong>Conclusión:</strong></p>
+                <p>Como \( f(-x) = f(x) \), la curva es simétrica respecto al eje \( y \).</p>
+                <iframe src="https://www.geogebra.org/graphing/d6h9ykek?embed" width="100%" height="400px" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+            </div>
+        </div>
+        <br><br>
+
+        <h2>3. Simetría respecto al origen</h2>
+        <p>Una gráfica es simétrica respecto al origen si, al rotarla 180 grados alrededor del origen, la gráfica no cambia. Esto significa que si un punto \( (x, y) \) pertenece a la gráfica, entonces el punto \( (-x, -y) \) también debe pertenecer a ella.</p>
+        <p class="condition">Condición algebraica:</p>
+        <p>Para una función \( f(x) \), la simetría respecto al origen se cumple si:</p>
+        <p>\[ f(-x) = -f(x) \]</p>
+        <p>Las funciones que cumplen esta condición se llaman funciones impares.</p>
+
+        <button class="example-button" onclick="toggleExample('exampleContent3')">EJEMPLO</button>
+        <div id="exampleContent3" class="example-content">
+            <p><strong>Función:</strong> \( f(x) = x^3 - 4x \)</p>
+            <div id="exerciseContent3" class="exercise-content">
+                <p><strong>Ejemplo:</strong></p>
+                <p>Considera la función \( f(x) = x^3 - 4x \).</p>
+                <ol>
+                    <li>
+                        <strong>Sustituir \( x \) por \( -x \):</strong><br>
+                        \[ f(-x) = (-x)^3 - 4(-x) = -x^3 + 4x \]
+                    </li>
+                    <li>
+                        <strong>Calcular \( -f(x) \):</strong><br>
+                        \[ -f(x) = -(x^3 - 4x) = -x^3 + 4x \]
+                    </li>
+                    <li>
+                        <strong>Comparar \( f(-x) \) con \( -f(x) \):</strong><br>
+                        \[ f(-x) = -f(x) \]
+                    </li>
+                </ol>
+                <p><strong>Conclusión:</strong></p>
+                <p>Por lo tanto, la función es simétrica respecto al origen.</p>
+                <iframe src="https://www.geogebra.org/graphing/kfsermzg?embed" width="100%" height="400px" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+<a href="#indice">REGRESAR AL ÍNDICE</li></a>
+    <h2>Extensión</h2>
+    <div class="texto">
+        <h2>Extensión de una Curva</h2>
+    <p>La extensión de una curva es la determinación de los intervalos de variación para los cuales los valores de las variables \( x \) y \( y \) son reales. Los valores de cada una de las variables para las cuales la otra se hace imaginaria carecen de sentido.
+</p>
+    <p>
+        Aquí se pueden presentar dos opciones:
+    </p>
+    <ol type="a">
+        <li>
+            <strong>Que se tenga un cociente:</strong> Aquí lo que debe evitarse es que el denominador se haga cero.
+        </li>
+        <li>
+            <strong>Que tenga un radical con índice par:</strong> Aquí lo que debe cuidarse es que su argumento sea positivo o, cuando menos, igual a cero.
+        </li>
+    </ol>
+        <p>Si no sucede ninguna de las dos opciones anteriores, entonces existe la gráfica en \( x \) para toda \( y \) y en \( y \) para toda \( x \).</p>
+        </div>
+    <button class="example-button" onclick="toggleExample('exampleContent4')">EJEMPLO</button>
+<div id="exampleContent4" class="example-content">
+    <p><strong>Ecuación:</strong> \( x^2 + y^2 = 16 \)</p>
+    <div id="exerciseContent4" class="exercise-content">
+        <p><strong>Ejemplo:</strong></p>
+        <p>Considera la ecuación \( x^2 + y^2 = 16 \).</p>
+        <ol>
+            <li>
+                <strong>Identificar el tipo de gráfica:</strong><br>
+                La ecuación \( x^2 + y^2 = 16 \) representa una <strong>circunferencia</strong> en el plano cartesiano.
+                <br>
+            </li>
+            <li>
+                <br>
+                <strong>Determinar el centro y el radio:</strong><br>
+                Comparando con la forma estándar de una circunferencia \( x^2 + y^2 = r^2 \), se deduce que: \[r^2 = 16 \Rightarrow r = 4\]
+                Por lo tanto, la circunferencia tiene:
+                <br>
+                <ul>
+                    <li><strong>Centro:</strong> \((0, 0)\)</li>
+                    <br>
+                    <li><strong>Radio:</strong> 4 unidades</li>
+                </ul>
+            </li>
+            <li>
+                <br>
+                <strong>Graficar la circunferencia:</strong><br>
+                Para graficar, marca el centro en el origen \((0, 0)\) y traza un círculo con un radio de 4 unidades.
+            </li>
+            <li>
+                <br>
+                <strong>Encontrar puntos clave:</strong><br>
+                Algunos puntos que satisfacen la ecuación son:
+                <ul>
+                    <li>\((4, 0)\) y \((-4, 0)\) (cuando \( y = 0 \))</li>
+                    <br>
+                    <li>\((0, 4)\) y \((0, -4)\) (cuando \( x = 0 \))</li>
+                </ul>
+            </li>
+        </ol>
+        <br>
+        <p><strong>Conclusión:</strong></p>
+        <p>La ecuación \( x^2 + y^2 = 16 \) representa una circunferencia con centro en \((0, 0)\) y radio 4.</p>
+        <iframe src="https://www.geogebra.org/graphing/fayysteq?embed" width="100%" height="400px" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+    </div>
+</div>
+    </div>
+<br>
+    <script>
+        function toggleExample(contentId) {
+            const exampleContent = document.getElementById(contentId);
+            if (exampleContent.style.display === "none" || exampleContent.style.display === "") {
+                exampleContent.style.display = "block"; 
+            } else {
+                exampleContent.style.display = "none"; 
+            }
+        }
+    </script>
+
+    <div class="texto"> 
+    <a id="sub3" name="sub3"><font face="BernhardTango BT" color="#6441A4"></font></a>
+    <h2>EXTENSIÓN</h2>
+    <br>
+    Con la extensión se determinan los intervalos de variación para los cuales los valores de \(x\) y \(y\) de una curva son reales. En pocas palabras, se deben considerar los valores de \(x\) y \(y\) para los cuales su ecuación correspondiente está definida.
+    <br><br>
+    Determinar la extensión de una curva permite localizar de manera general su distribución en el plano cartesiano, además de visualizar si la curva es cerrada o indefinida.
+    <br><br>
+    Al momento de determinar la extensión de una curva sobre el eje Y se realiza lo siguiente:
+    <br><br>
+    1. Se despeja la variable \(x\) de la ecuación, dejándola expresada en términos de \(y\).
+    <br>
+    2. Se determina para qué los valores de la \(y\) la expresión está definida.
+    <br><br>
+    De forma análoga, para determinar la extensión de la curva sobre el eje X se realiza lo siguiente:
+    <br><br>
+    1. Se despeja la variable \(y\) de la ecuación, dejándola expresada en términos de \(x\). 
+    <br>
+    2. Se determina para qué los valores de la \(x\) la expresión está definida.
+    <br><br>
+    <h3>EJEMPLO 1:</h3> 
+    <br>
+    Determina la extensión de la curva \(x^2+y^2=16\)
+    <br><br>
+    <h3>SOLUCIÓN:</h3>
+    <br>
+    Se despeja \(y\):
+    <br><br>
+    \(x^2+y^2=16\)
+    <br>
+    \(y^2=16-x^2\)
+    <br><br><br>
+    Se obtiene: 
+    <br><br>
+    \(y= {\pm} \sqrt{16-x^2}\)
+    <br><br><br>
+    (Si \(x\) toma valores menores que 4 o menores que -4 el valor de \(y\)) sería imaginario, es decir, no estará definido. Por tanto, la extensión de \(x\) está en el intervalo \(-4 \leq x \leq 4 \). Esto quiere decir que \(x\) puede tomar cualquier valor entre -4 y 4, incluyéndolos)
+    <br><br><br>
+    Ahora se despeja \(x\):
+    <br><br>
+    \(x^2+y^2= 16\)
+    <br>
+    \(x^2=16-y^2\)
+    <br><br><br>
+    De ahí se obtiene:
+    <br><br>
+    \(x={\pm} \sqrt{16-y^2}\)
+    <br><br><br>
+    De nuevo, se puede notar que \(x\) no pueden tomar valores mayores que 4 o menores que -4, por lo tanto, su extensión está en el intervalo \(-4 \leq y \leq 4 \).
+    <br><br><br><br>
+    <h3>EJEMPLO 2:</h3>
+    <br>
+    Determina la extensión de la curva \(x^2+4y^2=25\)
+    <br><br>
+    <h3>SOLUCIÓN:</h3>
+    <br>
+    Despejamos \(y:\)
+    <br><br>
+    \(4y^2=25-x^2\)
+    <br><br>
+    \(y^2= \frac{25-x^2}{4}\)
+    <br><br>
+    \(y= {\pm} \sqrt{\frac{25-x^2}{4}}\)
+    <br><br><br>
+    Para que la expresión tenga sentido en los números reales, el radicando debe ser mayor o igual a cero:
+    <br><br>
+    \(25-x^2 \geq 0\)
+    <br>
+    \(x^2 \leq 25\)
+    \(-5 \leq x \leq 5\)
+    <br><br><br>
+    Despejamos \(x:\)
+    <br><br>
+    \(x^2= 25-4y^2\)
+    <br><br>
+    \(x= {\pm} \sqrt{25-4y^2}\)
+    <br><br><br>
+    Para que la expresión tenga sentido, el radicado debe ser mayor o igual a cero: 
+    <br><br>
+    \(25-4y^2 \geq 0\)
+    <br><br>
+    \(4y^2 \leq 25\) 
+    <br><br>
+    \(y^2 \leq \frac{25}{4}\)
+    <br><br>
+    \(-\frac{5}{2} \leq x \leq \frac{5}{2}\)
+    <br><br><br>
+    La extensión de la curva está en los intervalos:
+    <br><br>
+    \(-5 \leq x \leq 5\), \(-\frac{5}{2} \leq y \leq \frac{5}{2}\)
+<br><br>
+<a href="#indice">REGRESAR AL ÍNDICE</li></a>
+
+    <br><br><br><br><br><br>
+     <a id="sub4" name="sub4"><font face="BernhardTango BT" color="#6441A4"></font></a>
+    <h2>TRAZO DE CURVAS</h2>
+    <br>
+    Se refiere al proceso de dibujar o representar gráficamente una curva en un sistema de coordenadas (por lo general, en el plano cartesiano) siguiendo una ecuación o conjunto de ecuaciones que describen dicha curva.
+    <br><br>
+    Se consideran los siguientes pasos:
+    <br><br>
+    1. Determinación de las intercepciones con los ejes coordenados.
+    <br>
+    2. Determinación con la simetría de la curva.
+    <br>
+    3. Determinación de la extensión de la curva.
+    <br>
+    4. Cálculo de las coordenadas de un número suficiente de puntos para obtener una gráfica adecuada.
+    <br>
+    5. Trazado de la curva.
+    <br><br>
+   <h3>EJEMPLO 1:</h3>
+    <br>
+    Determina la gráfica correspondiente a la ecuación \(9x^2+25y^2-225=0\).
+    <br><br>
+    <h3>SOLUCIÓN:</h3>
+    <br>
+    1. Intersección con los ejes coordenados. Para determinar la intersección con el eje X se iguala a cero la variable y en la ecuación del lugar geompetrico. Esto es: 
+    <br>
+    Si \(y=0\) entonces:
+    <br><br>
+    \( 9x^2 + 25(0)^2 - 225 = 0\)
+    <br><br>
+    \(9x^2=225\)
+    <br><br>
+    \(x^2=\frac{225}{9}\)
+    <br><br>
+    \(x= {\pm} \sqrt{25}= {\pm}5\)
+    <br><br><br>
+    Para determinar la intersección con el eje Y, se iguala a cero la variable x en la 
+    <br><br><br>
+    INTERSECCIÓN CON EJE X:
+    <br><br>
+    Si \(y=0 \rightarrow x=5\)
+    <br>
+    Si \(y=0 \rightarrow x=-5\)
+    <br><br>
+    PUNTO DE CORTE:
+    <br><br>
+    \((5,0)\)
+    <br>
+     \((-5,0)\)
+     <br><br><br>
+
+    ecuación del lugar geométrico. Esto es: 
+    <br>
+    Si  \(x=0\), entonces:
+    <br><br>
+    \(9(0)^2+ 25y^2 -225 = 0\)
+    <br><br>
+    \(25y^2=225\)
+    <br><br>
+    \(y^2=9\)
+    <br><br>
+    \(x= {\pm} \sqrt{9}= {\pm}3\)
+
+    <br><br><br>
+
+    INTERSECCIÓN CON EJE Y:
+    <br><br>
+    Si \(x=0  \rightarrow  y=3\)
+    <br>
+    Si \(x=0  \rightarrow  y=-3\)
+    <br><br>
+    PUNTO DE CORTE:
+    <br><br>
+    \((3,0)\)
+    <br>
+     \((-3,0)\)
+     <br><br>
+     <a href="#indice">REGRESAR AL ÍNDICE</li></a>
+     <br><br><br><br>
+ </div>
+     <footer class="footer">
+        <p class="copyright">&copy; 2025 Todos los derechos reservados. Desarrollado por el salón 2605.</p>
+    </footer>
+</body>
+</html>

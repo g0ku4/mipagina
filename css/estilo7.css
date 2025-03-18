@@ -1,0 +1,50 @@
+*{
+padding: 0 px;
+margin: 0 px;
+}
+
+#header{
+	margin: auto;
+	width: 500 px;
+	font-family: Arial,Helvetica, Times New Roman;
+
+}
+
+ul, ol{
+	list-style: none;
+}
+
+.nav li a{
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 15 px;
+	display: block;
+}
+
+.nav li a:hover{
+	background-color: #f50b20;
+}
+
+.nav > li{
+float: left;
+}
+
+.nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 140 px;
+}
+
+.nav li:hover > ul{
+	display: block;
+}
+
+.nav li ul li{
+	position: relative;
+}
+
+.nav li ul li ul{
+	right:  -140 px;
+	top: 0 px;
+}

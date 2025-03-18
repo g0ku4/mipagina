@@ -1,0 +1,246 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITIOTAREAS</title>
+    <link rel="icon" type="image/png" href="img/icono.png">
+<!-- Botón para regresar a la principal -->
+<button onclick="window.history.back()" class="btn btn-secondary">Regresar a la pagina principal</button>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" type="text/css" href="css/estilo8.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        #principal {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        header img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .titulo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .sub-titulo {
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        .menu {
+            margin-left: auto;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #2980b9;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        #myCarousel {
+            margin: 30px 0;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        #categorias {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+
+        #categorias .uno {
+            background-color: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            width: 30%;
+        }
+
+        #categorias img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        #categorias h2 {
+            font-size: 20px;
+            color: #2980b9;
+        }
+
+        .leer-mas {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .izq, .der {
+            width: 48%;
+        }
+
+        .izq img, .der iframe {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <header>
+            <div id="logo">
+                <img src="img/icono.png" alt="Logo">
+                <h3 class="titulo">Informática - TICS 4</h3>
+                <p class="sub-titulo">ejemplo de página web</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" class="menuf">Inicio</a></li>
+                    <li><a href="#" class="menuf">Info</a></li>
+                    <li><a href="#" class="menuf">Apps</a></li>
+                    <li><a href="#" class="menuf">Premex</a></li>
+                    <li><a href="#" class="menuf">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Imágenes del Carrusel -->
+            <div class="carousel-inner">
+                <div class="item active"><!-- Botón para regresar a la principal -->
+
+                    <img src="img/gokus.png" alt="Imagen 1">
+                </div>
+                <div class="item">
+                    <img src="img/go.webp" alt="Imagen 2">
+                </div>
+                <div class="item">
+                    <img src="img/ka.png" alt="Imagen 3">
+                </div>
+            </div>
+            
+            <!-- Controles del Carrusel -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+
+        <section id="categorias">
+            <div class="uno">
+                <img src="img/archivo.png" alt="Icono de archivo">
+                <h2>Archivos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="leer-mas">Leer más</a>
+            </div>
+            <div class="uno">
+                <img src="img/diamante.png" alt="Icono de diamante">
+                <h2>Información</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="leer-mas">Leer más</a>
+            </div>
+            <div class="uno">
+                <img src="img/queja.png" alt="Icono de queja">
+                <h2>Quejas</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#" class="leer-mas">Leer más</a>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="izq">
+                <img src="img/directorio.png" alt="Icono de directorio">
+                <h2>COBAY</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="der">
+                <h2>VIDEO</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/OGDGjpp_8zc?si=U112zqOw2A092SSC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <footer>
+            <p>(c) Todos los derechos reservados, Mérida Yucatán, México 2023<br>
+            Creado por <a href="mailto:josue.medina@example.com">May Argaez</a></p>
+        </footer>
+    </div>
+</body>
+</html>

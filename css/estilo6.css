@@ -1,0 +1,48 @@
+#principal{
+	width: 90 px;
+	height: auto; overflow: hidden;
+	border: 0 px solid #000;
+	margin: auto;
+}
+.texto1{
+	font-family: coming sans MS;
+	font-size: 10 px;
+	font-weight: bold;
+	font-style: italic;
+	color: #00AACC;
+	background-color: #000;
+	border-style: solid;
+	border-color: #fF0c0c;
+	border-width: 4 px;
+	margin: 14 px;
+	padding: 20 px;
+	border-radius: 14 px;
+}
+.texto2{
+	font-family: arial;
+	font-size: 10 px;
+	font-weight: bold;
+	font-style: italic;
+	color: #00AACC;
+	background-color: #000;
+	border-style: solid;
+	border-color: #fF0c0c;
+	border-width: 4 px;
+	margin: 14 px;
+	padding: 20 px;
+	border-radius: 14 px;
+}
+.texto3{
+	font-family: aptos;
+	font-size: 10 px;
+	font-weight: bold;
+	font-style: italic;
+	color: #00AACC;
+	background-color: #000;
+	border-style: solid;
+	border-color: #fF0c0c;
+	border-width: 4 px;
+	margin: 14 px;
+	padding: 20 px;
+	border-radius: 14 px;
+}

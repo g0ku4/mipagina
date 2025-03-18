@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<button onclick="window.history.back()" class="btn btn-secondary">Regresar a la pagina principal</button>
+			<title>CUENTA REGRESIVA</title>
+	</head>
+	<body bgcolor="black">
+			<center><font face="CALIBRI" color="white" size="12"><b>CUENTA REGRESIVA</b></font></center>
+			<br>
+			<p align="left"><font face="ARIAL" size="4" color="white"><blockquote><blockquote> 
+			<p><font face="arial" size="4" color="red"><blockquote>Tiempo que resta para teminar el dia..</p>
+				<form name="Reloj">
+					<input type="text" size="7" name="tiempo" value="mm:hh:ss" title="Lo que falta para terminar el dia...">
+		<script>
+	        function updateReloj() {
+	            var tiempo = new Date();
+	            var hora = 23 - tiempo.getHours();
+	            var minutos = 59 - tiempo.getMinutes();
+	            var segundos = 59 - tiempo.getSeconds();
+	            var tiempoAtras = hora + ":" + minutos + ":" + segundos;
+	            hora = hora < 10 ? "0" + hora : hora;
+	            minutos = minutos < 10 ? "0" + minutos : minutos; 
+	            segundos = segundos < 10 ? "0" + segundos : segundos;
+	            document.Reloj.tiempo.value = tiempoAtras;
+	            setTimeout(updateReloj, 1000);
+	        }
+	        updateReloj();
+    	</script>
+	</body>
+</html>

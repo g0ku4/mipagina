@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> TICS - carpeta de evidencias</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/ESENCIA.png" href="img/ESENCIA.png">
+    
+    <!-- Agregar fuente personalizada (Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-image: url('img/f.jpg');
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+        }
+
+        #principal {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+
+        #logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        h3.titulo {
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        #slide {
+            margin: 20px 0;
+        }
+
+        .carousel-inner img {
+            width: 100%; 
+            max-width: 800px;
+            margin: 0 auto; 
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #info {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        #info h2 {
+            color: #FFD700;
+            font-size: 2rem;
+        }
+
+        #practicas button {
+            margin-bottom: 20px;
+        }
+
+        #footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <header>
+            <div id="logo">
+                <img src="img/ESENCIA.png" alt="Logo">
+                <h3 class="titulo">Informatica - TICS 4</h3>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index1.html">Ada 1</a></li>
+                    <li><a href="index2.html">Ada 2</a></li>
+                    <li><a href="index3.html">Ada 3</a></li>
+                    <li><a href="index4.html">Ada 4</a></li>
+                    <li><a href="javascript:void(0);" onclick="mostrarSeccion('practicas')">Prácticas</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="slide">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/gokus.png" alt="Imagen 1" class="d-block w-55">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/goku.png" alt="Imagen 2" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/kakaroto.png" alt="Imagen 3" class="d-block w-55">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <section id="info">
+            <h2>Bienvenida</h2>
+            <p>Bienvenidos a mi sitio web. Un cordial saludo en este sitio donde podrás consultar mis demás páginas, Adas y Prácticas
+                <br>
+                En el apartado de abajo se mostrara el apartado de practicas.
+            .</p>
+
+            <!-- Sección de Prácticas -->
+            <section id="practicas" class="seccion" style="display: none;">
+                <h2>Prácticas</h2>
+                <button onclick="toggleLista()" class="btn btn-primary">Ver Lista de Prácticas</button>
+                <ul id="listaPracticas" style="display: none;">
+                    <li><a href="practica1.html">Práctica 1</a></li>
+                    <li><a href="practica2.html">Práctica 2</a></li>
+                    <li><a href="practica3.html">Práctica 3</a></li>
+                    <li><a href="practica4.html">Práctica 4</a></li>
+                    <li><a href="practica5.html">Práctica 5</a></li>
+                    <li><a href="practica6.html">Práctica 6</a></li>
+                    <li><a href="practica7.html">Práctica 7</a></li>
+                    <li><a href="practica8.html">Práctica 8</a></li>
+                    <li><a href="practica9.html">Práctica 9</a></li>
+                </ul>
+                <!-- Botón para regresar a la principal -->
+                <button onclick="regresarPrincipal()" class="btn btn-secondary">Regresar a la pagina principal</button>
+            </section>
+        </section>
+
+        <footer id="footer">
+            <p>(C) Todos los derechos reservados, Mérida Yucatán, México 2023</p>
+        </footer>
+    </div>
+
+    <script>
+     
+        function mostrarSeccion(seccion) {
+            const secciones = document.querySelectorAll('.seccion');
+            secciones.forEach(function(sec) {
+                sec.style.display = 'none';
+            });
+
+            const seccionMostrar = document.getElementById(seccion);
+            if (seccionMostrar) {
+                seccionMostrar.style.display = 'block';
+            }
+        }
+
+        function toggleLista() {
+            const lista = document.getElementById('listaPracticas');
+            lista.style.display = (lista.style.display === 'none' || lista.style.display === '') ? 'block' : 'none';
+        }
+
+        function regresarPrincipal() {
+            mostrarSeccion('info'); 
+        }
+
+        mostrarSeccion('info');
+    </script>
+</body>
+</html>

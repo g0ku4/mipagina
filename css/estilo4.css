@@ -1,0 +1,381 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #9BABAB;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.indice {
+    align-self: flex-start;
+    text-align: left;
+    margin-left: 380px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+    .indice {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .indice {
+        margin-left: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .indice {
+        margin-left: 0;
+    }
+}
+
+
+#menu {
+    display: none;
+}
+
+/* ícono del menú hamburguesa */
+.menu-icono {
+    width: 40px;
+    height: 40px;
+    background: url('ruta_del_icono.png') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px; /* ícono del menú a la derecha */
+    z-index: 1001;
+}
+
+/* Menú de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* oculta por defecto a la derecha */
+    width: 250px;
+    height: 100vh;
+    background: #06141B;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 60px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 0;
+    align-items: flex-start;
+}
+
+.navbar ul li {
+    width: 100%;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: left;
+    color: #DEDEDE;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+}
+
+
+#menu:checked ~ .navbar {
+    right: 0; 
+}
+
+
+label {
+    position: fixed;
+    top: 20px;
+    right: 20px; 
+    z-index: 1002;
+    cursor: pointer;
+}
+
+    
+.container {
+    text-align: center;
+    background: #4A5C6A;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease;
+    margin-top: 100px;
+
+    .h1a{
+        color:#CCD0CF;;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* animación al texto */
+h1 {
+    color: #11212D;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease;
+}
+
+h2 {
+    color: #253745;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease;
+}
+
+h3 {
+    
+    font-size: 23px;
+    color: #11212D;
+}
+
+p {
+    font-size: 18px;
+    animation: fadeIn 2s ease;
+}
+
+.texto {
+    color:#323232;
+    max-width: 800px; 
+    margin: 0 auto;   
+    padding: 20px;    
+    line-height: 1.6; 
+}
+
+.imagen {
+    float: right;
+    margin-left: 15px;
+} 
+
+.imagen{
+    animation: fadeIn 1.5s ease-out;
+}
+
+.imagen {
+    float: right;
+    margin-left: 15px;
+} 
+
+.imagen{
+    animation: fadeIn 1.5s ease-out;
+}
+
+.img {
+    margin: 125px;      
+    margin-top: 35px;
+    margin-bottom: 1px;
+
+}
+
+.img2 {
+    margin: 190px;      
+    margin-top: 35px;
+    margin-bottom: 1px;
+
+}
+
+/* Contacto */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    background:#11212D;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.h3a {
+    text-align: center;
+    font-size: 28px;
+    color: #FFF;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 5px;
+}
+
+input[type="text"], 
+input[type="tel"], 
+input[type="email"], 
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, 
+input[type="tel"]:focus, 
+input[type="email"]:focus, 
+textarea:focus {
+    border: 1px solid #3498db;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-txt {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.form-txt a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.form-txt a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* footer */
+.footer {
+    position: relative;
+    width: 100%;
+    background:#4A5C6A;
+    color: #CCD0CF;
+    min-height:100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition: transform 0.3s ease;
+}
+
+.footer:hover {
+    transform: scale(1.1);
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(180, 180, 180, 1) 0%, rgba(100, 100, 100, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    top: 0;
+    left: 0;
+    animation: animate-bar 3s linear infinite;
+}
+
+@keyframes animate-bar {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+/*---------------ADRIAN INICIO-----------------*/
+body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .example {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .condition {
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+.example-button {
+            background-color: #849095; 
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;   
+        }
+
+        .example-button:hover {
+            background-color: #000; 
+        }
+
+    
+        .example-content {
+            display: none; 
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+
+/*---------------ADRIAN FIN-----------------*/
